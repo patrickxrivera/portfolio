@@ -66,6 +66,16 @@ img{
 	max-width:100%;
 }
 
+.appstore {
+  max-width: 20%;
+  margin-left: 5%;
+}
+
+.appstore-link {
+  display: inline !important;
+  padding-left: 0px !important;
+}
+
 select,
 textarea,
 input[type="text"],
