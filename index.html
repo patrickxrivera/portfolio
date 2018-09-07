@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!--Favicons -->
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon-v2.png">
 
      <!--styles -->
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -126,9 +126,9 @@
 
                   <p>I enjoy building products that solve daily problems.</p>
 
-                  <p>Experience building mobile/web apps, compilers, programming languages, chatbots, and chrome extensions.</p>
+                  <p>Experience building mobile/web apps, a dynamic cron job scheduler, chatbots, and chrome extensions.</p>
 
-                  <p>My latest experience has been as a Full-Stack Engineer building a real-time messaging app for a VC-funded startup in San Francisco using React/React Native, GraphQL, Apollo, PostgreSQL, and AWS Lambda for serverless architecture.</p>
+                  <p>My latest experience has been as the Lead Software Engineer for a VC-funded startup in San Francisco building a real-time messaging app using React/React Native, GraphQL, Apollo, PostgreSQL, and AWS Lambda.</p>
 
                   <div class="page-scroll"><a class="btn btn-default" href="#contact">Contact Me</a>
                   <a class="btn btn-default" href="#works">See Portfolio</a>
@@ -155,28 +155,31 @@
                  <div class="clear"></div>
                 <ul class="portfolio-filters text-center">
                     <li class="filter active" data-filter="all">all</li>
+                    <li class="filter" data-filter="python">Python</li>
                     <li class="filter" data-filter="javascript">JavaScript</li>
-                    <li class="filter" data-filter="react">React Web</li>
-                    <li class="filter" data-filter="react">React Native</li>
-                    <li class="filter" data-filter="graphql">GraphQL/Apollo</li>
-                    <li class="filter" data-filter="graphql">Redux</li>
-                    <li class="filter" data-filter="node">Node.js/Express</li>
-                    <li class="filter" data-filter="postgres">PostgreSQL</li>
+                    <li class="filter" data-filter="react">React</li>
+                    <li class="filter" data-filter="react-native">React Native</li>
+                    <li class="filter" data-filter="flask">Flask</li>
+                    <li class="filter" data-filter="graphql">GraphQL</li>
+                    <li class="filter" data-filter="node">Node.js</li>
+                    <li class="filter" data-filter="redis">Redis</li>
+                    <li class="filter" data-filter="postgres">Postgres</li>
                     <li class="filter" data-filter="mongo">MongoDB</li>
+                    <li class="filter" data-filter="aws">AWS</li>
                 </ul><!--portfolio-filter nav-->
 
             <div id="grid">
-                <div class="col-md-12 col-sm-6 mix javascript angular ionic node mongo">
+                <div class="col-md-12 col-sm-6 mix javascript react-native graphql node postgres aws">
                     <div class="container">
                       <div class="row">
                         <div class="col-md-6 col-sm-6">
                            <div class="image-wrapper">
-                                <img src="images/portfolio/miyagi.jpeg" class="img-responsive" alt="work">
+                                <img src="images/chat.png" class="img-responsive" alt="work">
                            <div class="image-overlay">
                              <br>
                               <h3>Career Karma</h3>
                                <span>
-                               <a href="images/portfolio/miyagi.jpeg" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
+                               <a href="images/chat.png" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
                                 <a href="http://patrickrivera.io/projects/playlist-io" target="_blank"><i class="fa fa-chain"></i></a>
                                </span>
                             </div>
@@ -196,17 +199,18 @@
                             <div class="project-details">
 
                                 <br>
-                                <p>Real-time messaging app that connects people learning to code with mentors and like-minded peers.</p>
+                                <p>Real-time messaging app that matches people learning to code with mentors and like-minded peers.</p>
                                 <br>
-                                <p>React Web/Native | GraphQL | Apollo | PostgreSQL</p>
+                                <p>React Native | GraphQL | Node.js | Apollo | Postgres</p>
 
                               <br>
                               <h4>Impact:</h4>
                               <ul class="project-details-list">
-                                <li>Built a real-time messaging app by implementing GraphQL server-side subscriptions and React components for web and mobile</li>
-                                <li>Designed the GraphQL API schema to support relationships between users, messages, and groups</li>
-                                <li>Implemented infinite scrolling for messages to reduce load time and improve user experience</li>
-                                <li>Leveraged agile best practices such as daily standups and weekly sprints to improve product development speed</li>
+                                <li>Leading development of our reusable React component library using the render prop pattern and higher order components, resulting in over 50 components and increased efficiency for a team of 4 engineers</li>
+                                <li>Created real-time messaging system by building React components that consume server-side subscriptions </li>
+                                <li>Built edit profile page by integrating the AWS S3 SDK for file uploads, GraphQL for the API, and React for views</li>
+                                <li>Developed mobile push notification system using the Expo SDK and AsyncStorage for persistent client-side storage</li>
+                                <li>Investors include CEO of YCombinator, CTO of Coinbase, and Head of Growth at Instagram, among others</li>
                               </ul>
                             </div>
                         </div>
@@ -215,152 +219,153 @@
                     </div><!--project item and description container-->
                 </div> <!--work item-->
                 <br>
-                <div class="col-md-12 col-sm-6 mix javascript angular node mysql">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6">
-                        <div class="image-wrapper">
-                          <img src="images/munch/munchguru.gif" class="img-responsive" alt="work">
-                          <div class="image-overlay">
-                            <br>
-                            <h3>Telegram Bot</h3>
-                            <span>
-                              <a href="images/munch/munchguru.gif" target="_blank" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
-                            </span>
+                <div class="col-md-12 col-sm-6 mix python flask redis postgres react javascript">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                           <div class="image-wrapper">
+                                <img src="images/daily_sms.gif" class="img-responsive" alt="work">
+                           <div class="image-overlay">
+                             <br>
+                              <h3>Daily SMS</h3>
+                               <span>
+                               <a href="images/portfolio/miyagi.jpeg" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
+                                <a href="http://patrickrivera.io/projects/playlist-io" target="_blank"><i class="fa fa-chain"></i></a>
+                               </span>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="cv-detail">
-                          <div id="project-header">
-                            <h3>Telegram Bot</h3>
-                            <a href="https://github.com/MunchGuru/MunchGuru" target="_blank"><i class="fa fa-github"></i> Github</a>
-                            <a href="http://munchguru.azurewebsites.net" target="_blank"><i class="fa fa-external-link"></i> Live Site</a>
-                          </div>
-                          <div class="project-details">
-                            <br>
+                        </div><!--project image-->
+                        <div class="col-md-6 col-sm-6">
+                          <div class="cv-detail">
+                            <div id="project-header">
+                              <h3>Daily SMS</h3>
 
-                            <p>Bot that helps people see information on members of the Rise Community - a group of founders, venture capitalists, and tech employees.</p>
+                            <div class="project-links">
+                              <a href="https://github.com/WildDonut/WildDonut-Client" target="_blank"><i class="fa fa-github"></i> Github</a>
+                              <a href="http://mr-miyagi.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> Live Site</a>
+                            </div>
+                            </div>
                             <br>
-                            <p>Node.js | Express</p>
+                            <div class="project-details">
 
-                            <br>
-                            <h4>Impact</h4>
-                            <p>•  Inherited legacy code base, streamlined user engagement by enhancing UI and UX by customizing existing Angular.js directives and refactoring navigation</p>
-                            <p>•  Improved the core app by creating a restaurant search functionality and a Tinder-­like “Discover Restaurants” feature</p>
-                            <p>•  Engineered a restaurant search functionality that integrates with Yelp’s API</p>
-                            <p>•  Deployed, optimized, and troubleshot the performance of the Azure server and the interactions it had with Github</p>
-                          </div>
+                                <br>
+                                <p>Dynamic cron job scheduler and REST API for sending yourself a daily text message.</p>
+                                <br>
+                                <p>Python | Flask | Redis | React | Postgres </p>
+
+                              <br>
+                              <h4>Impact:</h4>
+                              <ul class="project-details-list">
+                                <li>Built an SMS scheduling app using a Redis job queue, dynamic background cron jobs, and a REST API</li>
+                                <li>Submitted a PR to the Twilio-Python Authentication API by fixing a bug related to type casting values, leading to it being merged into master the next day  <a target="_blank" href="https://github.com/authy/authy-python/pull/41">(link)</a></li>
+                                <li>Created a web dashboard in React/Redux for adding and deleting messages using a Python/Flask REST API</li>
+                                <li>Leveraged TDD while building the REST API using Python's unittest module</li>
+                              </ul>
+                            </div>
                         </div>
-                      </div><!--porject description-->
-                    </div><!--project item and description row-->
-                  </div><!--project item and description container-->
+                        </div><!--porject description-->
+                      </div><!--project item and description row-->
+                    </div><!--project item and description container-->
                 </div> <!--work item-->
-                <br>
+
                 <div class="col-md-12 col-sm-6 mix javascript react mongo node">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6">
-                        <div class="image-wrapper">
-                          <img src="images/scramble/scramble.jpeg" class="img-responsive" alt="work">
-                          <div class="image-overlay">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                           <div class="image-wrapper">
+                                <img src="images/playlist_io.gif" class="img-responsive" alt="work">
+                           <div class="image-overlay">
+                             <br>
+                              <h3>Playlist.io</h3>
+                               <span>
+                                <a href="http://patrickrivera.io/projects/playlist-io" target="_blank"><i class="fa fa-chain"></i></a>
+                               </span>
+                            </div>
+                          </div>
+                        </div><!--project image-->
+                        <div class="col-md-6 col-sm-6">
+                          <div class="cv-detail">
+                            <div id="project-header">
+                              <h3>Playlist.io</h3>
+
+                            <div class="project-links">
+                              <a href="https://github.com/WildDonut/WildDonut-Client" target="_blank"><i class="fa fa-github"></i> Github</a>
+                              <a href="http://mr-miyagi.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> Live Site</a>
+                            </div>
+                            </div>
                             <br>
-                            <h3>Playlist.io</h3>
-                            <span>
-                              <a href="images/scramble/scramble.jpeg" target="_blank" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
-                            </span>
-                          </div>
+                            <div class="project-details">
+
+                                <br>
+                                <p>Streaming app that includes a web music player, recommendations, and ability to save playlists to your Spotify account.</p>
+                                <br>
+                                <p>React | Node.js | MongoDB </p>
+
+                              <br>
+                              <h4>Impact:</h4>
+                              <ul class="project-details-list">
+                                <li>Integrated the Spotify Recommendations API with Node.js/Express to generate a playlist of 100 songs based on user search input</li>
+                                <li>Built a web dashboard in React/Redux that supports viewing song recommendations, saving playlists, and listening to music with a web player.</li>
+                                <li>Created a REST API in Node.js/Express to handle adding/deleting favorite songs, and to save playlists to a user's Spotify account.</li>
+                              </ul>
+                            </div>
                         </div>
-                      </div>
-                      <div class="col-md-6 col-sm-6">
-                        <div class="cv-detail">
-                          <div id="project-header">
-                            <h3>Playlist.io</h3>
-                            <a href="https://github.com/devmeyster/scramblegame" target="_blank"><i class="fa fa-github"></i> Github</a>
-                            <a href="http://www.arturmeyster.me/scramblegame" target="_blank"><i class="fa fa-external-link"></i> Live Site</a>
-                          </div>
-                          <div class="project-details">
-                            <h5>Scramble Game</h5>
-                            <p> • Word Scramble is a word finding game that will fill your time with FUN and CHALLENGE!! It is easy to play, but hard to put down!!</p>
-                            <br>
-                            <p>•  Developed a user interface using Angular.js which retrieves and scrambles words from Wordnik API </p>
-                          </div>
-                        </div>
-                      </div><!--porject description-->
-                    </div><!--project item and description row-->
-                  </div><!--project item and description container-->
+                        </div><!--porject description-->
+                      </div><!--project item and description row-->
+                    </div><!--project item and description container-->
                 </div> <!--work item-->
-                <br>
-                <div class="col-md-12 col-sm-6 mix javascript ember">
+
+
+                <div class="col-md-12 col-sm-6 mix react javascript">
                     <div class="container">
                       <div class="row">
                         <div class="col-md-6 col-sm-6">
-                          <div class="image-wrapper">
-                            <img src="images/yelp/yelp.gif" class="img-responsive" alt="work">
-                            <div class="image-overlay">
-                              <br>
+                           <div class="image-wrapper">
+                                <img src="images/programmer_dashboard.jpg" class="img-responsive" alt="work">
+                           <div class="image-overlay">
+                             <br>
                               <h3>Programmer Dashboard</h3>
-                              <span>
-                                <a href="images/yelp/yelp.gif" target="_blank" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
-                                <a href="http://yelpvisualization.azurewebsites.net/" target="_blank"><i class="fa fa-chain"></i></a>
-                              </span>
+                               <span>
+                               <a href="images/portfolio/miyagi.jpeg" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
+                                <a href="http://patrickrivera.io/projects/playlist-io" target="_blank"><i class="fa fa-chain"></i></a>
+                               </span>
                             </div>
                           </div>
-                        </div>
+                        </div><!--project image-->
                         <div class="col-md-6 col-sm-6">
                           <div class="cv-detail">
                             <div id="project-header">
                               <h3>Programmer Dashboard</h3>
-                              <a href="https://github.com/MunchGuru/yelp-visualization" target="_blank"><i class="fa fa-github"></i> Github</a>
-                              <a href="http://yelpvisualization.azurewebsites.net/" target="_blank"><i class="fa fa-external-link"></i> Live Site</a>
+
+                            <div class="project-links">
+                              <a href="https://github.com/WildDonut/WildDonut-Client" target="_blank"><i class="fa fa-github"></i> Github</a>
+                              <a href="http://mr-miyagi.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> Live Site</a>
                             </div>
+                            </div>
+                            <br>
                             <div class="project-details">
-                              <h5>Famo.us visualization of local Yelp places in San Francisco, CA</h5>
+
+                                <br>
+                                <p>New tab chrome extension that includes top Hacker News stories, popular Product Hunt posts, and a to-do list widget.</p>
+                                <br>
+                                <p>React | Redux</p>
+
                               <br>
-                              <p>•	Designed front-end architecture in Famo.us to work with local business data retrieved from Yelp’s API</p>
-                              <p>•	Collaborated with back-end team to produce asynchronous communication between front-end and Node/Express server</p>
+                              <h4>Impact:</h4>
+                              <ul class="project-details-list">
+                                <li>Integrated the Hacker News API and Product Hunt API to get real-time updates on the top posts of the day</li>
+                                <li>Built a real-time clock by polling the Moment.js API every second using vanilla JavaScript</li>
+                                <li>Persisted ability to add and delete todo's using the LocalStorage API</li>
+                              </ul>
                             </div>
-                          </div>
-                        </div><!--porject description-->
-                      </div><!--project item and description row-->
-                    </div><!--project item and description container-->
-                  </div> <!--work item-->
-                  <br>
-                <div class="col-md-12 col-sm-6 mix rails ruby">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                          <div class="image-wrapper">
-                            <img src="images/mvp/mvp.png" target="_blank" class="img-responsive" alt="work">
-                            <div class="image-overlay">
-                              <br>
-                              <h3>Data Structures in JavaScript ES6</h3>
-                              <span>
-                                <a href="images/mvp/mvp.png" target="_blank" title="Image description"  class="image-popup"> <i class="fa fa-camera-retro"></i></a>
-                                <a href="https://github.com/devmeyster" target="_blank"><i class="fa fa-chain"></i></a>
-                              </span>
-                            </div>
-                          </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                          <div class="cv-detail">
-                            <div id="project-header">
-                              <h3>Data Structures in JavaScript ES6</h3>
-                              <a href="https://github.com/devmeyster" target="_blank"><i class="fa fa-github"></i> Github</a>
-                            </div>
-                            <div class="project-details">
-                              <h5>Github Repo comparison tool</h5>
-                              <p>Contributing to open source projects is something that I’ve been wanting to do for a while now. The main motivation for the project is to create a tool that can compare open source projects against each other and narrow down the list of repos that are popular among developers</p>
-                              <br>
-                              <h4>Responsibilities:</h4>
-                              <p>•	Developed a user interface using Angular.js which retrieves and displays Github repository stats </p>
-                              <p>•	Built Express server with Node.js to handle fetching and parsing of data from the Github API</p>
-                            </div>
-                          </div>
                         </div><!--porject description-->
                       </div><!--project item and description row-->
                     </div><!--project item and description container-->
-                  </div> <!--work item-->
+                </div> <!--work item-->
+
+
+
               </div> <!--/.grid-->
            </div>  <!-- /.row-->
         </div> <!-- /.container-->
@@ -377,15 +382,18 @@
 
                   <!--Start Experience #1 -->
                   <li>
-                    <div class="c-date"><span>May 2018 - August 2018</span></div>
+                    <div class="c-date"><span>June 2018 - Present</span></div>
                     <i class="time-icon fa fa-briefcase fa-2x"></i>
                     <div class="cv-detail">
                       <h3>Career Karma</h3>
-                      <h4>Full-Stack Software Engineer (Contractor)</h4>
-                      <p>•	Designed and implemented the database schema and GraphQL server to save users and posts in a PostgreSQL database.</p>
-                      <p>•	Built 20+ React components for features such as real-time chat, adding posts, and following users.</p>
-                      <p>•  Built a Node.js Telegram bot that takes Google form survey data from 50+ community members and creates a navigable interface for viewing survey data.</p>
-                      <p>•	Integrated server-side-rendering with Next.js and serverless architecture using AWS Lambda.</p>
+                      <h4>Lead Software Engineer (Freelancer)</h4>
+
+                      <p>•	Leading development of our reusable React component library using the render prop pattern and higher order components, resulting in over 50 components and increased efficiency for a team of 4 engineers.</p>
+                      <p>•	Created real-time messaging system by building React components that consume server-side subscriptions.</p>
+                      <p>•  Built edit profile page by integrating the AWS S3 SDK for file uploads, GraphQL for the API, and React for views.</p>
+                      <p>•	Developed mobile push notification system using the Expo SDK and AsyncStorage for persistent client-side storage.</p>
+                      <p>•	Investors include CEO of YCombinator, CTO of Coinbase, and Head of Growth at Instagram, among others.</p>
+
                       </p>
                     </div>
                   </li>
@@ -397,10 +405,8 @@
                       <div class="cv-detail">
                         <h3>MissionU (Acquired by WeWork)</h3>
                         <h4>Product Management Intern</h4>
-                        <p>•  Designed and developed a product to help students with their spreadsheets skills which included a real-time progress dashboard using JavaScript and Google Sheets</p>
-                        <p>•	Awarded the GSD (Get Sh*t Done) Award at the Annual Holiday Party for leading initiaves outside of core role such as: assembling Ikea desks for new employees, picking up office supplies, and coordinating student events.</p>
-                        <p>•	Gathered trends from student feedback data and created a weekly presentation to discuss product recommendations with the curriculum/product team
-                        </p>
+                        <p>•  Received the Get Sh*t Done Award from the founders for contributions outside core role, such as building IKEA desks for new employees, packaging boxes for customers, and organizing events to maintain company culture</p>
+                        <p>•	Built spreadsheets course for students by researching competitors and designing an assessment dashboard .</p>
                       </div>
                     </li>
             </ul>
@@ -424,8 +430,9 @@
                         <div class="cv-detail">
                         <h3>Florida State University</h3>
                         <h4>BS Information Systems | Minor in Data Analytics</h4>
-                        <p><strong>Cumulative GPA:</strong> 3.8</p>
+                        <p><strong>GPA:</strong> 3.8</p>
                         <p><strong>Honors:</strong> Phi Kappa Phi (Top 7.5% of Graduating Class)</p>
+                        <p><strong>Coursework:</strong> Systems Design, Database Management, Programming Fundamentals, Data Mining, Networking.</p>
                         </div>
                     </li>
 
@@ -497,7 +504,7 @@
                 <div class="col-md-12 text-center">
                     <!--Start footer social-->
                     <ul class="list-inline footer-social">
-                       <li><a href="https://twitter.com/priv16" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                       <li><a class="main-icon" href="https://twitter.com/priv16" target="_blank"><i class="fa fa-twitter"></i></a></li>
                        <li><a href="https://github.com/pxr13" target="_blank"><i class="fa fa-github"></i></a></li>
                        <li><a href="https://www.linkedin.com/in/patrickxrivera/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                   </ul>
